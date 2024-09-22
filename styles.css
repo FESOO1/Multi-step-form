@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --f-all: "Ubuntu", sans-serif;
     --f-poppins: "Poppins", sans-serif;
 }
 
@@ -10,6 +8,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--f-poppins);
 }
 
 body {
@@ -65,7 +64,6 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    font-family: var(--f-all);
 }
 
 .form-left-text-step-info {
@@ -73,7 +71,6 @@ body {
     flex-direction: column;
     justify-content: center;
     row-gap: 5px;
-    font-family: var(--f-poppins);
 }
 
 .step-text {
@@ -93,4 +90,55 @@ body {
     border: 1px solid hsl(206, 94%, 87%);
     color: hsl(213, 96%, 18%);
     background-color: hsl(206, 94%, 87%);
+}
+
+/* FORM RIGHT */
+
+.form-right {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+/* FORM RIGHT BOTTOM */
+
+.form-right-bottom {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 50px;
+}
+
+.form-right-bottom > button {
+    font-family: var(--f-poppins);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.go-back-button {
+    background-color: transparent;
+    border: 0;
+    color: hsl(231, 11%, 63%);
+    transition: color 300ms;
+}
+
+.next-step-button {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 0.4rem;
+    box-shadow: 0 1px 1px black;
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    transition: background-color 300ms;
+}
+
+/* BUTTON HOVER STATES */
+
+.go-back-button:hover {
+    color: hsl(213, 96%, 18%);
+}
+
+.next-step-button:hover {
+    background-color: hsl(213, 100%, 25%);
 }
