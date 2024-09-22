@@ -41,10 +41,48 @@
       </div>
       <div class="form-right">
         <form class="form-right-top">
-          <div class="step-form active-form">1 FORM</div>
-          <div class="step-form">2 FORM</div>
-          <div class="step-form">3 FORM</div>
-          <div class="step-form">4 FORM</div>
+
+          <!-- STEP ONE FORM -->
+
+          <div class="step-form step-one-form active-form">
+            <div class="form-one-text">
+              <h2 class="header">Personal Info</h2>
+              <p class="paragraph">Please provide your name, email address, and phone number.</p>
+            </div>
+            <label for="nameInput">
+              <div class="name-text">
+                <span class="input-indicator-text">Full Name</span>
+                <h5 id="errorMessage" class="erorr-message">This field is required</h5>
+              </div>
+              <input type="text" placeholder="ex: Firdavs Utkirov" id="nameInput">
+            </label>
+            <label for="emailAddressInput">
+              <div class="name-text">
+                <span class="input-indicator-text">Email Address</span>
+                <h5 id="errorMessage" class="erorr-message">This field is required</h5>
+              </div>
+              <input type="email" placeholder="ex: example@gmail.com" id="emailAddressInput">
+            </label>
+            <label for="phoneNumberInput">
+              <div class="name-text">
+                <span class="input-indicator-text">Full Name</span>
+                <h5 id="errorMessage" class="erorr-message">This field is required</h5>
+              </div>
+              <input type="text" placeholder="ex: +1 234 567 890" id="phoneNumberInput">
+            </label>
+          </div>
+
+          <!-- STEP TWO FORM -->
+
+          <div class="step-form step-two-form">2 FORM</div>
+
+          <!-- STEP THREE FORM -->
+          
+          <div class="step-form step-three-form">3 FORM</div>
+
+          <!-- STEP FOUR FORM -->
+
+          <div class="step-form step-four-form">4 FORM</div>
         </form>
         <div class="form-right-bottom">
           <button disabled type="button" id="goBackBtn" class="go-back-button">Go Back</button>
