@@ -40,10 +40,16 @@
         </div>
       </div>
       <div class="form-right">
-        <div class="form-right-top"></div>
+        <form class="form-right-top">
+          <div class="step-form active-form">1 FORM</div>
+          <div class="step-form">2 FORM</div>
+          <div class="step-form">3 FORM</div>
+          <div class="step-form">4 FORM</div>
+        </form>
         <div class="form-right-bottom">
-          <button id="goBackBtn" class="go-back-button">Go Back</button>
-          <button id="nextStepBtn" class="next-step-button">Next Step</button>
+          <button disabled type="button" id="goBackBtn" class="go-back-button">Go Back</button>
+          <button type="button" id="nextStepBtn" class="next-step-button">Next Step</button>
+          <button disabled type="submit" id="confirmButton" class="confirm-button">Confirm</button>
         </div>
       </div>
     </div>

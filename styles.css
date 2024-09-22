@@ -97,6 +97,23 @@ body {
 .form-right {
     display: grid;
     grid-template-rows: 1fr auto;
+    row-gap: 10px;
+}
+
+/* FORM RIGHT TOP */
+
+/* .form-right-top {
+
+} */
+
+.step-form {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.active-form {
+    display: flex;
 }
 
 /* FORM RIGHT BOTTOM */
@@ -127,13 +144,21 @@ body {
     border: 0;
     padding: 10px 20px;
     border-radius: 0.4rem;
-    box-shadow: 0 1px 1px black;
     color: white;
     background-color: hsl(213, 96%, 18%);
     transition: background-color 300ms;
 }
 
-/* BUTTON HOVER STATES */
+.confirm-button {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 0.4rem;
+    color: white;
+    background-color: hsl(243, 100%, 62%);
+    transition: background-color 300ms;
+}
+
+/* BUTTON STATES */
 
 .go-back-button:hover {
     color: hsl(213, 96%, 18%);
@@ -141,4 +166,18 @@ body {
 
 .next-step-button:hover {
     background-color: hsl(213, 100%, 25%);
+}
+
+.confirm-button:hover {
+    background-color: hsl(243, 100%, 72%);
+}
+
+.go-back-button:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.next-step-button:disabled,
+.confirm-button:disabled {
+    display: none;
 }
